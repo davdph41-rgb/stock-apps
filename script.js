@@ -1131,3 +1131,30 @@ document.getElementById("exportReportBtn")
 
 
 renderDailyReport();
+
+/* ========================================
+   23. REGISTRASI SERVICE WORKER (PWA)
+======================================== */
+
+if ("serviceWorker" in navigator) {
+
+    window.addEventListener("load", () => {
+
+        navigator.serviceWorker
+            .register("service-worker.js")
+            .then(registration => {
+                console.log(
+                    "Service Worker aktif:",
+                    registration.scope
+                );
+            })
+            .catch(error => {
+                console.error(
+                    "Service Worker gagal:",
+                    error
+                );
+            });
+
+    });
+
+}
