@@ -1,6 +1,6 @@
 {
-  "name": "Stock App",
-  "short_name": "Stock App",
+  "name": "Stock sembodro",
+  "short_name": "Stock Sembodro",
   "description": "Aplikasi manajemen stok menu",
   "start_url": "./index.html",
   "scope": "./",
